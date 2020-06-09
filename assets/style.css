@@ -1,0 +1,188 @@
+/* General Definitions */
+
+ul {
+	list-style-type: none;
+}
+
+* {
+	border: solid !important;
+	
+}
+a:hover,
+a:link,
+a:active,
+a:visited {
+  color: currentcolor;
+  text-decoration: none;
+}
+
+
+/* Header */
+
+nav {
+	position: relative;
+}
+
+.menu-bars {
+	width: 30px;
+	height:30px;
+}
+
+div.menu-items:target {
+	border: solid 1px;
+	
+}
+
+nav div.nav-menu-wrapper:target{
+	display: none;
+}
+
+
+
+.menu-items{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 45px;
+	z-indez:10;
+	background-color: white;
+	
+}
+
+
+nav .times-icon{
+	width: 15px;
+	align-self: end;
+}
+
+
+nav .logo {
+	display: none;
+}
+
+.media-links > li, .about-links > li {
+	margin:  0;
+	
+}
+
+.media-links, .about-links{
+	padding: 0 85px;
+}
+
+.media-links, .about-links{
+	border-top: solid 1px gray;
+	order:1;
+	display: flex;
+	flex-direction: column;	
+}
+
+
+.about-links {
+	order:0;	
+}
+
+.facebook-icon, .instagram-icon{
+	align-self: center;
+	background-color: white;
+	padding: 5px 0;
+	
+		
+}
+
+.facebook-icon > img, .instagram-icon > img {
+	width: 18px;
+}
+
+@media (min-width:768px)
+{
+ 
+ nav .logo {
+	 display: block;
+	 width: 78px;
+	
+	 
+ }
+ 
+ .menu-bars, .times-icon {
+	 display: none; 
+ }
+ 
+ .media-links {
+	 order:0;
+	 flex-direction: row;
+	 
+	 border: none;
+	 height: 30px;
+	 margin-top: 0;
+	 margin-bottom: 0;
+	 padding: 0 170px;
+	 justify-content: end;
+	 background-color: #3e3e3e;
+ }
+ 
+ .about-links {
+	 order: 1; 
+	 flex-direction: row;
+	 margin-top: 0;
+	 padding: 0 170px;
+	 height: 65px; 
+	 align-items: center;
+	 justify-content: space-between;
+	 
+ }
+ 
+ .menu-items, .nav-menu-wrapper{
+	 width: 100%;
+	 position: static;
+	 display: flex;
+	 line-height: 10px;
+ }
+ 
+ .contact-us {
+	 align-self: center;
+ }
+ 
+ 
+ .media-links > li{
+	 margin: 0;
+	 display: flex;
+	 align-items: center;
+	 color: white;
+	 font-weight: 700;
+	 padding: 0;
+ }
+ 
+ 
+ .media-links > li {
+	 margin: 0 10px;
+ }
+ 
+ body{
+	 margin: 0;
+ }
+ 
+ .about-items{
+	 display: flex;
+	 width: 65%;
+	 justify-content: space-between;
+	 align-items: center;
+ }
+ .about-items > li {
+	 font-weight: 700; 
+ }
+ 
+ .register p{
+	 border: solid #ec5245 3px;
+	 line-height: 30px;
+	 padding: 0 12px;
+	 color: red;
+ }
+	 
+.about{
+	color: red;
+}
+	 
+ }
+ 
+ 
+ 
