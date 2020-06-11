@@ -1,11 +1,27 @@
 /* General Definitions */
 
+
+html * {
+  font-family: lato, arial, sans-serif;
+}
+
+@font-face {
+  font-family: cocogoose;
+  src: url(fonts/Cocogoose_trial.otf);
+}
+
+@font-face {
+	font-family: lato;
+	src:url(fonts/Lato-Regular.ttf);
+}
+
+
 ul {
 	list-style-type: none;
 }
 
 * {
-	border: solid !important;
+	bosrder: solid !important;
 	
 }
 a:hover,
@@ -14,6 +30,23 @@ a:active,
 a:visited {
   color: currentcolor;
   text-decoration: none;
+}
+
+h1,h2, h3, h4, h5, h6{
+	font-family: cocogose;
+	color: #EC5242;
+	margin-bottom:7px;
+}
+
+h1{
+	font-family: cocogoose;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size:32px;
+	font-weight:500;
 }
 
 
@@ -26,6 +59,7 @@ nav {
 .menu-bars {
 	width: 30px;
 	height:30px;
+	margin-left:21px;
 }
 
 div.menu-items:target {
@@ -128,6 +162,7 @@ nav .logo {
 	 height: 65px; 
 	 align-items: center;
 	 justify-content: space-between;
+	 margin:0;
 	 
  }
  
@@ -185,4 +220,53 @@ nav .logo {
  }
  
  
+/* Presentation section*/
+
+
+
+.presentation{
+	height: 685px;
+	width: 100%;
+	background-image:  url("images/people.svg");
+	margin-top: -60px;
+	margin-left:-10px;
+	padding-top:150px;
+	padding-left:30px;
+	padding-right: 30px;
+	background-repeat: no-repeat;
+}
+
+.title{
+	background-image: url("images/lion-3.jpeg");
+	background-position: bottom 0 right 0 ;
+	background-repeat: no-repeat;
+	background-clip:text;
+	background-size: cover;
+	color: transparent;
+	line-height:35px;
+	margin-top: 0;
+}
+
+
+.advice{
+	width:40px;
+	float: right;
+	margin-top: 7px;
+	margin-right:7px;
+}
+ 
+ .congress-description{
+	 
+	 border: solid 4px white;
+	 padding: 20px;
+
+ }
+
+ .date, .place{
+	 color: black;
+	 font-weight: bold;
+	
+ }
+ 
+
  
