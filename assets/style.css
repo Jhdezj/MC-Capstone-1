@@ -59,7 +59,7 @@ nav {
 .menu-bars {
 	width: 30px;
 	height:30px;
-	margin-left:21px;
+	margin-left:20px;
 }
 
 div.menu-items:target {
@@ -144,7 +144,6 @@ nav .logo {
  .media-links {
 	 order:0;
 	 flex-direction: row;
-	 
 	 border: none;
 	 height: 30px;
 	 margin-top: 0;
@@ -223,15 +222,17 @@ nav .logo {
 /* Presentation section*/
 
 
-
+.how-big{
+	margin-left: 20px;
+}
 
 .presentation{
 	background-image: url(images/people-1500.jpg);
-	margin: 15px;
-	background-position: top;
+	margin-top: -38px;
+	background-position: top left -408px;
 	background-repeat: no-repeat;
 	padding-top: 100px;
-		background-color: #d3d3d3;
+	background-color: #d3d3d3;
 	
 	
 }
@@ -247,27 +248,34 @@ nav .logo {
 	color: transparent;
 	line-height:35px;
 	margin-top: 0;
-
+	margin-left:20px;
+	margin-right: 20px;
 }
 
 
 .advice{
-	width:40px;
+	width:100px;
 	float: right;
-	margin-top: 7px;
-	margin-right:7px;
 }
  
  .congress-description{
+	margin-left: 20px;
+	margin-right: 20px;
 	 
-	 border: solid 4px white;
-	 padding: 20px;
-
  }
+ 
+ .congress-description p {
+	  border: solid 4px white;
+	  padding: 15px;
+	 
+	  
+ }
+ 
 
  .date, .place{
 	 color: black;
 	 font-weight: bold;
+	 margin-left: 20px;
 	
  }
  
