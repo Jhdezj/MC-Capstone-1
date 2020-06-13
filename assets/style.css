@@ -62,16 +62,20 @@ nav {
 	margin-left:20px;
 }
 
-/*div.menu-items:target {
-	border: solid 1px;
-	
-}*/
+
+
+nav div.menu-items{
+	display: none;
+}
+
 
 nav div.nav-menu-wrapper:target{
 	display: none;
 }
 
-
+nav div.menu-items:target{
+	display: flex;
+}
 
 .menu-items{
 	display: flex;
@@ -138,11 +142,15 @@ nav .logo {
 @media (min-width:768px)
 {
  
+nav div.menu-items{
+	display: flex;
+}
+ 
+
+ 
  nav .logo {
 	 display: block;
-	 width: 78px;
-	
-	 
+	 width: 78px; 
  }
  
  .menu-bars, .times-icon {
