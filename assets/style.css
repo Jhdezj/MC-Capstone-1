@@ -45,6 +45,7 @@ h2{
 h3{
 	font-size: 20px;
 	text-align: center;
+	padding-top:20px;
 }
 
 h4{
@@ -57,7 +58,6 @@ h4{
 section{
 	padding-left: 35px;
 	padding-right:35px;
-	padding-top: 50px;
 }
 
 h3::after{
@@ -68,7 +68,7 @@ h3::after{
 	border-top: solid red 1px;
 	margin: auto;
 	margin-bottom: 30px;
-	margin-top: 3px;
+	margin-top: 10px;
 }
 
 
@@ -179,7 +179,6 @@ nav div .menu-items{
 	 justify-content: end;
 	 background-color: #3e3e3e;
 	 width: 100%;
-	 padding-right: 200px;
  }
 
 
@@ -210,8 +209,13 @@ nav div .menu-items{
  }
  
  
+ 
  .menu-items .media-links li, .menu-items .about-links li{
-	 margin: 10px;
+	 margin: 8px;
+ }
+
+.menu-items .media-links .log-out{
+	 margin-right:108px;
  }
 
 	.menu-items .register{
@@ -537,4 +541,72 @@ background-image: url(images/canada.svg);
 	}
 	
 }
+
+
+/* partners */
+
+
+.committee img {
+	width: 200px;
+}
+
+.committee .picture{
+	display: flex; 
+	justify-content: center; 
+}
+
+.committee {
+	padding-bottom: 20px;
+	background-color:#424146;
+	color: #d3d3d3;
+}
+
+
+/*footer */
+
+footer{
+	background-color: #f2f2f2;
+}
+
+footer .picture img{
+	width: 115px;
+	
+}
+
+.copyright{
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+}
+
+/*
+<section class="concerts">
+				<h3 class="title"> Concerts</h3>
+				<div class="posters">
+				<div class="picture"><img src="assets/images/invasores.jpg"></div>
+				<div class="picture"><img src="assets/images/molotov.jpg"></div>
+				<div class="picture"><img src="assets/images/mexicano.jpg"></div>
+				</div>
+		</section>
+
+
+
+/* Concerts */
+
+/*.concerts .posters{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.concerts img {
+	width: 200px;
+}
+
+.concerts .picture {
+	margin-top:5px;;
+
+	
+}*/
 
