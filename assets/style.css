@@ -1,6 +1,8 @@
 /* General Definitions */
 
 
+
+
 html * {
   font-family: lato, arial, sans-serif;
 }
@@ -212,13 +214,14 @@ nav div .menu-items{
 	 margin: 10px;
  }
 
-	
-}
-
-.menu-items .register{
+	.menu-items .register{
 	border: solid red; 
 	padding: 7px;
 }
+
+	
+}
+
 
 
 /* Presentation section */
@@ -242,7 +245,7 @@ main{
 
 
 
-.title{
+h1.title{
 	background-image: url("images/lion-3.jpeg");
 	background-position: bottom 0 right 0 ;
 	background-repeat: no-repeat;
@@ -296,7 +299,8 @@ main{
 	main{
 		margin-top: 0;
 	}
-  .title{
+  
+  h1.title{
 	 font-size:50px;
 	 line-height: 55px;
 	 max-width: 680px; 
@@ -316,6 +320,7 @@ main{
 .main-program{
 	background-image: url(images/animals-1.jpg);	
 	background-size: 50px;
+	padding: 0;
 }
 
 .main-program .title, .main-program .events p {
@@ -361,7 +366,7 @@ main{
 }
 
 .main-program .events li > .title{
-	min-width: 120px;
+	min-width: 80px;
 	margin: 0 13px;
 }
 
@@ -369,7 +374,39 @@ main{
 	margin: 0 13px;
 }
 
+@media (min-width:768px){
 
+.main-program .events {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.main-program .events li {
+	flex-direction: column;
+	margin:2px;
+	max-width: 200px;
+	width: 20%;
+	text-align: center;
+}
+
+.main-program .events li > *, .main-program .events li > p {
+	margin: 15px 0;
+	
+}
+
+.main-program .events li img {
+	display: flex; 
+	margin: 0;
+	flex-direction: column;
+	justify-content: center;
+	height: 45px;
+
+}
+
+
+
+}
 
 
 
