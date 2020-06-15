@@ -16,14 +16,6 @@ html * {
 }
 
 
-ul {
-	list-style-type: none;
-}
-
-* {
-	bosrder: solid !important;
-	
-}
 a:hover,
 a:link,
 a:active,
@@ -32,14 +24,13 @@ a:visited {
   text-decoration: none;
 }
 
-h1,h2, h3, h4, h5, h6{
+h1,h2{
 	font-family: cocogose;
 	color: #EC5242;
 	margin-bottom:7px;
 }
 
 h1{
-	font-family: cocogoose;
 	font-size: 35px;
 	text-transform: uppercase;
 }
@@ -47,6 +38,35 @@ h1{
 h2{
 	font-size:32px;
 	font-weight:500;
+}
+
+h3{
+	font-size: 20px;
+	text-align: center;
+}
+
+h4{
+	font-size: 18px;
+	
+}
+
+
+
+section{
+	padding-left: 35px;
+	padding-right:35px;
+	padding-top: 50px;
+}
+
+h3::after{
+	content:"";
+	display: block;
+	width: 50px;
+	height:0px;
+	border-top: solid red 1px;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 3px;
 }
 
 
@@ -60,6 +80,7 @@ nav {
 	width: 30px;
 	height:30px;
 	margin-left:20px;
+	margin-top: 15px;
 }
 
 
@@ -81,11 +102,14 @@ nav div.menu-items:target{
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	top: -8px;
+	top: -15px;
 	z-indez:10;
 	background-color: white;
 	border: solid 2px;
 	margin: 0;
+	width: 250px;
+	justify-content: center;
+	align-items: center;
 	
 }
 
@@ -101,100 +125,77 @@ nav .logo {
 	display: none;
 }
 
-.media-links > li, .about-links > li {
-	margin:  0;
-	
+.media-links {
+	order:1;	
+	border-top: solid 1px #ec2542;
 }
 
-.media-links, .about-links{
-	border-top: solid 1px gray;
-	order:1;
+.menu-items .media-links li, .menu-items .about-links li{
+	margin: 15px 0;
+}
+
+.menu-items .media-links, .menu-items .about-links, .menu-items .about-items{
 	display: flex;
-	flex-direction: column;	
-	padding: 0 85px;
-	margin-right: 8px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.media-links{
- margin-top: -15px;
- padding-top:10px;
-}
-
-.about-links {
-	order:0;	
-}
-
-
-
-
-.facebook-icon, .instagram-icon{
-	align-self: center;
-	background-color: white;
-	padding: 5px 0;
+@media (min-width:768px){
 	
-		
-}
+	
+ .menu-bars, .times-icon {
+	 display: none; 
+ }
 
-.facebook-icon > img, .instagram-icon > img {
-	width: 18px;
-}
-
-@media (min-width:768px)
-{
- 
-nav div.menu-items{
-	display: flex;
-}
- 
-
- 
- nav .logo {
+  nav .logo {
 	 display: block;
 	 width: 78px; 
  }
  
- .menu-bars, .times-icon {
-	 display: none; 
- }
- 
- .media-links {
+nav div .menu-items{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: static;
+}
+
+
+.menu-items .media-links, .menu-items .about-links, .menu-items .about-items{	
+	flex-direction: row;
+	
+}
+
+
+.menu-items .media-links {
 	 order:0;
 	 flex-direction: row;
 	 border: none;
 	 height: 30px;
 	 margin-top: 0;
 	 margin-bottom: 0;
-	 padding: 0 170px;
 	 justify-content: end;
 	 background-color: #3e3e3e;
+	 width: 100%;
+	 padding-right: 200px;
  }
- 
- .about-links {
+
+
+.menu-items .about-links {
 	 order: 1; 
 	 flex-direction: row;
 	 margin-top: 0;
-	 padding: 0 170px;
 	 height: 65px; 
 	 align-items: center;
-	 justify-content: space-between;
 	 margin:0;
+	 width: calc(100% - 200px);
+	 justify-content: space-between;
+
 	 
  }
  
- .menu-items, .nav-menu-wrapper{
-	 width: 100%;
-	 position: static;
-	 display: flex;
-	 line-height: 10px;
- }
- 
- .contact-us {
-	 align-self: center;
- }
- 
- 
  .media-links > li{
-	 margin: 0;
+	 margin: 5px;;
 	 display: flex;
 	 align-items: center;
 	 color: white;
@@ -202,53 +203,39 @@ nav div.menu-items{
 	 padding: 0;
  }
  
- 
- .media-links > li {
-	 margin: 0 10px;
+ .media-links > .facebook-icon, .media-links > .instagram-icon {
+	background-color: white;
  }
  
- body{
-	 margin: 0;
- }
  
- .about-items{
-	 display: flex;
-	 width: 65%;
-	 justify-content: space-between;
-	 align-items: center;
+ .menu-items .media-links li, .menu-items .about-links li{
+	 margin: 10px;
  }
- .about-items > li {
-	 font-weight: 700; 
- }
- 
- .register p{
-	 border: solid #ec5245 3px;
-	 line-height: 30px;
-	 padding: 0 12px;
-	 color: red;
- }
-	 
-.about{
-	color: red;
+
+	
 }
-	 
- }
- 
- 
-/* Presentation section*/
+
+.menu-items .register{
+	border: solid red; 
+	padding: 7px;
+}
 
 
-.how-big{
-	margin-left: 20px;
+/* Presentation section */
+
+main{
+	margin-top: -48px;
+	
 }
+
 
 .presentation{
 	background-image: url(images/people-1500.jpg);
-	margin-top: -38px;
 	background-position: top left -408px;
 	background-repeat: no-repeat;
-	padding-top: 100px;
+	padding-top: 135px;
 	background-color: #d3d3d3;
+	padding-bottom: 50px;
 	
 	
 }
@@ -264,8 +251,7 @@ nav div.menu-items{
 	color: transparent;
 	line-height:35px;
 	margin-top: 0;
-	margin-left:20px;
-	margin-right: 20px;
+	
 }
 
 
@@ -273,12 +259,7 @@ nav div.menu-items{
 	width:100px;
 	float: right;
 }
- 
- .congress-description{
-	margin-left: 20px;
-	margin-right: 20px;
-	 
- }
+
  
  .congress-description p {
 	  border: solid 4px white;
@@ -292,7 +273,10 @@ nav div.menu-items{
 	 color: black;
 	 font-weight: bold;
 	 margin-left: 20px;
-	
+ }
+ 
+ .place{
+	 font-size:20px;
  }
  
  
@@ -306,4 +290,86 @@ nav div.menu-items{
 	
  }
  
+@media (min-width:768px)
+{
+	
+	main{
+		margin-top: 0;
+	}
+  .title{
+	 font-size:50px;
+	 line-height: 55px;
+	 max-width: 680px; 
+ }
+
+.congress-description p{
+	max-width: 900px;
+	font-size: 16px;
+	
+} 
  
+}
+
+
+/*Main program*/
+
+.main-program{
+	background-image: url(images/animals-1.jpg);	
+	background-size: 50px;
+}
+
+.main-program .title, .main-program .events p {
+	color: white;
+}
+
+
+.main-program .events li{
+	margin-left: 18px;
+	margin-right: 18px;
+	margin-bottom: 14px;
+	position: relative;
+	z-index:1;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.main-program .events li::before{
+	content:"";
+	position: absolute; 
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white; 
+	z-index:-1;
+	opacity: .3;
+}
+
+.main-program .events .title{
+	color: #ec5242;
+}
+
+.main-program .events li img{
+	margin: 0 13px;
+	width: 40px;
+}
+
+.main-program .events li .logo img{
+	width: 60px;
+	margin-right: -6px;
+}
+
+.main-program .events li > .title{
+	min-width: 120px;
+	margin: 0 13px;
+}
+
+.main-program .events li > p{
+	margin: 0 13px;
+}
+
+
+
+
+
