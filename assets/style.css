@@ -314,6 +314,30 @@ h1.title{
  
 }
 
+@media (min-width:1300px){
+	
+	.presentation {
+		
+		background-position: top left;
+	}
+	
+@media (min-width:1500px){
+	
+	.presentation {
+		background-size: 100vw;
+	}
+	
+	h2.how-big{
+		border: solid yellow;
+		margin-top:30px;
+	}
+	
+}
+	
+	
+	
+
+}
 
 /*Main program*/
 
