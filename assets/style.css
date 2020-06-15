@@ -237,7 +237,7 @@ main{
 	background-position: top left -408px;
 	background-repeat: no-repeat;
 	padding-top: 135px;
-	background-color: #d3d3d3;
+	background-color: #f2f2f2ff;
 	padding-bottom: 50px;
 	
 	
@@ -265,9 +265,9 @@ h1.title{
 
  
  .congress-description p {
-	  border: solid 4px white;
-	  padding: 15px;
-	 
+	  border: solid 4px gainsboro;
+	  padding: 40px;
+	  margin-bottom: 15px;
 	  
  }
  
@@ -328,7 +328,6 @@ h1.title{
 	}
 	
 	h2.how-big{
-		border: solid yellow;
 		margin-top:30px;
 	}
 	
@@ -363,6 +362,12 @@ h1.title{
 	align-items: center;
 }
 
+@media (max-width: 400px){
+.main-program .events li{
+ flex-wrap: wrap;
+}
+}
+
 .main-program .events li::before{
 	content:"";
 	position: absolute; 
@@ -391,6 +396,7 @@ h1.title{
 
 .main-program .events li > .title{
 	min-width: 80px;
+	max-width: 80px;
 	margin: 0 13px;
 }
 
@@ -399,6 +405,10 @@ h1.title{
 }
 
 @media (min-width:768px){
+	
+.main-program{
+	padding: 20px;
+}
 
 .main-program .events {
 	display: flex;
@@ -429,8 +439,102 @@ h1.title{
 }
 
 
-
 }
 
 
+/* Featured speakers */
+
+
+
+
+
+.speakers li .picture img{
+	width: 140px;
+	border: solid; 
+}
+
+.speakers li{
+	display: flex;
+	position: relative;
+	margin-bottom: 50px;
+	color: #272A31;
+}
+
+
+
+.speakers li::before {
+	display: block;
+	content:"";
+	background-image: url(images/united-states.svg);
+	background-repeat: no-repeat;
+	height:53px;
+	width: 200px;
+	position: absolute;
+	z-index:-1;
+	top: -11px;
+	left: -15px; 
+	background-size: contain;
+}
+
+
+.speakers li:nth-child(5)::before {
+background-image: url(images/canada.svg);
+}
+
+.speakers .description{
+	margin-left: 20px;
+}
+
+.speakers .title{
+	color: #272A31;	
+}
+
+.speakers .position{
+	margin: 5px 0;
+	font-size: 13px;
+	color: #ec2542;
+}
+
+@media (max-width: 420px){
+	.speakers li{
+		flex-wrap: wrap;
+	}
+	
+	.speakers .description{
+		margin-left:0;
+	}
+}
+
+
+.speakers .position::after{
+	content: "";
+	display: block;
+	width: 30px;
+	border: solid #d3d3d3 1px;
+	height:0;
+	margin-top: 10px;
+}
+
+
+
+.speakers .interests{
+	margin-top: 15px;
+}
+
+
+@media (min-width: 768px){
+	
+	.speakers ul{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+	}
+	
+	.speakers li {
+		width:47%;
+		
+	}
+	
+}
 
