@@ -856,3 +856,66 @@ footer .picture img{
 
 }
 
+/* packages */
+
+.program-section{
+	margin-top: 100px;
+}
+.previous-event, .concerts-section, .packages-section{
+	color: #272A31;
+}
+
+
+.packages .image{
+	text-align: center;
+	margin-top:20px;
+}
+
+.packages img {
+	width: 70%;	
+}
+
+.packages > li {
+	display: flex; 
+	flex-direction: column;
+	align-items: center; 
+	margin: 50px 0;
+}
+
+.packages .includes{
+	width: 70%;
+	list-style-type:circle;
+}
+
+.price{
+	margin-top: 30px; 
+	margin-bottom: 10px;
+	font-weight:700;
+}
+
+.buy-it-here{
+	background-color: #ec5242;
+	border: solid 1px;
+	padding: 5px;
+	color: black;
+}
+
+@media (min-width: 768px){
+	
+	.packages{
+		display: flex;
+	}
+	
+	.packages < li{
+		align-items: space-between;
+	}
+	
+	.packages .includes{
+	height: 250px;
+}
+
+.silver-package .includes {
+	margin-top: 9px;
+}
+	
+}
