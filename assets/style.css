@@ -949,7 +949,7 @@ footer .picture img{
 	margin-bottom: 50px;
 }
 
-/* open-work */
+/* Open Work */
 
 .open-work-section{
 	margin-bottom: 50px;
@@ -974,3 +974,192 @@ footer .picture img{
 .guidelines-document .download{
 	margin-top: 5px;
 }
+
+/* Tickets */
+
+.select-package-section{
+	
+	background-color: #f2f2f2;
+	padding-bottom: 50px;
+	padding-top: 80px;
+	
+	
+}
+
+
+.select-package td, .select-package th{
+	border: solid 1px #d3d3d3;
+	padding: 10px;
+	text-align: center;
+}
+
+.acquisition-step{
+	border: solid 1px;
+	border-radius: 100px;
+	padding: 10px 20px 10px 40px;
+	display: inline-block;
+	margin-bottom:30px;
+}
+
+.step-instruction{
+	display: list-item;
+	list-style-image: url("images/rhombus.svg");
+}
+
+.step-number{
+	color: #ec5242;
+	margin-right: 10px;
+}
+
+.select-package-section {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.table-frame {
+ 
+  border: 5px solid ;
+  border-image: repeating-linear-gradient(135deg, white 0px, white 3px, red 3px, red 6px, white 6px, white 9px, blue 9px, blue 12px) 5;
+
+}
+
+form{
+	border: none;
+}
+
+
+@media(min-width: 678px)
+{
+	.select-package-section{
+	margin-top:0;
+	padding-top: 50px;
+	
+}
+}
+
+
+@media (max-width:677px){
+	
+
+	
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	.table-header{
+		display: none;
+	}
+	
+	
+	.gold-label::after, .silver-label::after, .affiliate-label::after{
+		font-weight: 700;
+		margin-left: 10px; 
+		display: inline;
+	}
+	
+	.gold-label::after{
+		content:  "(Gold)";
+		
+	} 
+	
+	.silver-label::after{
+		content:  "(Silver)";
+	} 
+	
+	.affiliate-label::after{
+		content:"(Affiliate)"
+	}
+	
+	.normal-package, .scholarship-package {
+		font-weight: 700;
+		background-color: #f2f2f2;
+	}
+	
+	.select-package td, .select-package th{
+		border-bottom: none;
+	}
+
+	.affiliate-label-scholarship{
+		display: none;
+	}
+	
+	
+	
+}
+
+/* Select color */
+.rhombus-divide{
+	width:30px;
+	margin: auto;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.rhombus-divide img{
+	position: absolute;
+	top: -15px;
+}
+
+
+.select-package-color-section{
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.select-package-color td, .select-package-color th{
+	border: solid 1px #d3d3d3;
+	padding: 10px;
+	text-align: center;
+}
+
+.package-color{
+	vertical-align: middle;
+	font-weight: 700;
+	
+}
+
+
+.save{
+	border: solid 1px;;
+	background-color: #ec5242;
+	padding: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	
+}
+
+.save-button-wrapper{
+	display: flex; 
+	justify-content: center;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+
+@media (max-width:678px){
+
+
+.select-package-color{
+	
+	margin-bottom: 50px;
+}
+
+.select-package-color td, .select-package-color th{
+	border-bottom: none;
+	}
+.select-package-color tr{
+	border-bottom: solid 1px #d3d3d3;
+}
+
+.save-button-wrapper{
+	
+	margin-top: 0;
+}
+
+}
+
+
