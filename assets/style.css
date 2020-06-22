@@ -1,7 +1,6 @@
 /* General Definitions */
 
 
-
 @font-face {
   font-family: cocogoose;
   src: url(fonts/Cocogoose_trial.otf);
@@ -75,6 +74,7 @@ h3::after{
 	margin-top: 10px;
 }
 
+iframe { border: none; }
 
 /* Header */
 
@@ -109,7 +109,7 @@ nav div.menu-items:target{
 	flex-direction: column;
 	position: absolute;
 	top: -15px;
-	z-indez:10;
+	z-index:100;
 	background-color: white;
 	border: solid 2px;
 	margin: 0;
@@ -147,9 +147,26 @@ nav .logo {
 	align-items: center;
 }
 
+.home-icon{
+	width: 25px;
+}
+
+.about{
+	display:none;
+}
+
+@media (min-width:832px){
+	
+	.about{
+		display: block;
+	}
+}
+
+
+
 @media (min-width:768px){
 	
-	
+
  .menu-bars, .times-icon {
 	 display: none; 
  }
@@ -228,6 +245,17 @@ nav div .menu-items{
 }
 
 	
+}
+
+.about-items li:hover{
+	text-decoration: underline;
+}
+
+.about-items .register:hover{
+
+	text-decoration: none;
+	background-color: #ec5242;
+	color: white;
 }
 
 
@@ -348,19 +376,19 @@ h1.title{
 
 /*Main program*/
 
-.main-program{
+.main-program-section{
 	background-image: url(images/animals-1.jpg);	
 	background-size: 50px;
 	padding: 0;
 	padding-bottom: 18px;
 }
 
-.main-program .title, .main-program .events p {
+.main-program-section .title, .main-program-section .events p {
 	color: white;
 }
 
 
-.main-program .events li{
+.main-program-section .events li{
 	margin-left: 18px;
 	margin-right: 18px;
 	margin-bottom: 14px;
@@ -371,27 +399,32 @@ h1.title{
 	align-items: center;
 }
 
-.main-program .join{
+.main-program-section .join{
 	display: flex; 
 	justify-content: center;
 }
 
-.main-program .join > span{
+.main-program-section .join > span{
 	margin: 5px 18px;
 	display: inline-block;
 	background-color: #ec5242;
 	color: white;
 	padding: 20px;
 	font-size: 20px;
+	text-align: center;
+}
+
+.main-program-section .full-program {
+	display: none;
 }
 
 @media (max-width: 400px){
-.main-program .events li{
+.main-program-section .events li .wrapper{
  flex-wrap: wrap;
 }
 }
 
-.main-program .events li::before{
+.main-program-section .events li::before{
 	content:"";
 	position: absolute; 
 	top:0;
@@ -403,43 +436,56 @@ h1.title{
 	opacity: .3;
 }
 
-.main-program .events .title{
+.main-program-section .events .title{
 	color: #ec5242;
 }
 
-.main-program .events li img{
+.main-program-section .events li img{
 	margin: 0 13px;
 	width: 40px;
 }
 
-.main-program .events li .logo img{
+.main-program-section .events li .logo img{
 	width: 60px;
 	margin-right: -6px;
 }
 
-.main-program .events li > .title{
+.main-program-section .events li .wrapper > .title{
 	min-width: 100px;
 	max-width: 100px;
 	margin: 0 13px;
 }
 
-.main-program .events li > p{
+.main-program-section .events li .wrapper > p{
 	margin: 0 13px;
 }
 
+.main-program-section .events li .wrapper{
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+
+.main-program-section .events li:hover{
+	border: solid white 2px;
+	padding: 13px;
+}
+
+
 @media (min-width:768px){
 	
-.main-program{
+.main-program-section{
 	padding: 20px;
 }
 
-.main-program .events {
+.main-program-section .events {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	height: 220px;
 }
 
-.main-program .events li {
+.main-program-section .events li  {
 	flex-direction: column;
 	margin:2px;
 	max-width: 200px;
@@ -447,23 +493,37 @@ h1.title{
 	text-align: center;
 }
 
-.main-program .events li > *, .main-program .events li > p {
+.main-program-section .events li .wrapper > *, .main-program .events li  .wrapper > p {
 	margin: 15px 0;
 	
 }
 
-.main-program .events li img {
-	display: flex; 
-	margin: 0;
-	flex-direction: column;
-	justify-content: center;
+.main-program-section .events li img {
+	
 	height: 45px;
 
 }
 
-.main-program .join{
+.main-program-section .join{
 	display: none;
 }
+.main-program-section .events li .wrapper{
+	flex-direction: column;
+	
+}
+
+.main-program-section .full-program {
+	display: flex;
+	color: white;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+
+.main-program-section .full-program > span {
+	text-decoration: underline;
+}
+
 
 }
 
@@ -474,12 +534,12 @@ h1.title{
 
 
 
-.speakers li .picture img{
+.speakers-section li .picture img{
 	width: 140px;
 	border: solid; 
 }
 
-.speakers li{
+.speakers-section li{
 	display: flex;
 	position: relative;
 	margin-bottom: 50px;
@@ -488,7 +548,7 @@ h1.title{
 
 
 
-.speakers li::before {
+.speakers-section li::before {
 	display: block;
 	content:"";
 	background-image: url(images/united-states.svg);
@@ -503,36 +563,36 @@ h1.title{
 }
 
 
-.speakers li:nth-child(5)::before {
+.speakers-section-section li:nth-child(5)::before {
 background-image: url(images/canada.svg);
 }
 
-.speakers .description{
+.speakers-section .description{
 	margin-left: 20px;
 }
 
-.speakers .title{
+.speakers-section .title{
 	color: #272A31;	
 }
 
-.speakers .position{
+.speakers-section .position{
 	margin: 5px 0;
 	font-size: 13px;
 	color: #ec2542;
 }
 
 @media (max-width: 420px){
-	.speakers li{
+	.speakers-section li{
 		flex-wrap: wrap;
 	}
 	
-	.speakers .description{
+	.speakers-section .description{
 		margin-left:0;
 	}
 }
 
 
-.speakers .position::after{
+.speakers-section .position::after{
 	content: "";
 	display: block;
 	width: 30px;
@@ -543,21 +603,21 @@ background-image: url(images/canada.svg);
 
 
 
-.speakers .interests{
+.speakers-section .interests{
 	margin-top: 15px;
 }
 
 
 @media (min-width: 768px){
 	
-	.speakers ul{
+	.speakers-section ul{
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
 		justify-content: space-between;
 	}
 	
-	.speakers li {
+	.speakers-section li {
 		width:47%;
 		
 	}
@@ -841,6 +901,11 @@ footer .picture img{
 	margin: 10px 0;
 }
 
+.artists li:hover img{
+	border: solid white 2px;
+	
+}
+
 
 @media (min-width: 768px){
 	
@@ -887,10 +952,17 @@ footer .picture img{
 	list-style-type:circle;
 }
 
+.packages .includes li:first-child{
+	
+	list-style-type: none; 
+	height: 40px;
+}
+
 .price{
 	margin-top: 30px; 
 	margin-bottom: 10px;
 	font-weight:700;
+	height: 56px;
 }
 
 .buy-it-here{
@@ -899,6 +971,22 @@ footer .picture img{
 	padding: 5px;
 	color: black;
 }
+
+.purchase{
+	height: 100px;
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+	
+}
+
+.buy-it-here:hover{
+	
+	border: solid 2px;
+	width: calc (auto -4px);
+}
+
 
 @media (min-width: 768px){
 	
@@ -1137,8 +1225,13 @@ form{
 	justify-content: center;
 	margin-bottom: 50px;
 	margin-top: 50px;
+	height: 70px;
+	padding: 15px;
 }
 
+.save-button-wrapper button:hover{
+	border: solid 2px;
+}
 
 @media (max-width:678px){
 

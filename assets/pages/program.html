@@ -11,42 +11,46 @@
   <body>
 	<header>
 		<nav>
-			<div class="menu-bars"><a href="#show"><img src="../images/bars-solid.svg"></a></div>
+			<div class="menu-bars"><a href="#show"><img src="../images/bars-solid.svg" alt="menu-bars"></a></div>
 			<div class="nav-menu-wrapper" id="close">
 			<div class="menu-items" id="show">
-				<div class="times-icon" ><a href="#close"><img src="../images/times-solid.svg"></a> </div>
+				<div class="times-icon" ><a href="#close"><img src="../images/times-solid.svg" alt="times-icon"></a> </div>
 				<ul class="media-links">
-					<li class="facebook-icon"><a href="#"> <img src="../images/facebook.svg"></a></li>
-					<li class="instagram-icon"><a href="#"> <img src="../images/instagram.svg"></a></li>
+					<li class="facebook-icon"><a href="#"> <img src="../images/facebook.svg" alt="facebook-icon"></a></li>
+					<li class="instagram-icon"><a href="#"> <img src="../images/instagram.svg" alt="instagram-icon"></a></li>
 					<li class="language-sp"><p><a href="#"> Spanish</a></p></li>
 					<li class="my-page"><p><a href="#"> My page</a></p></li>
 					<li class="log-out"><p> <a href="#"> Logout </a></p></li>
 				</ul>
 				<ul class="about-links">
-					<li class="logo"><img src="../images/logo-cvdl-modified.svg"></li>
-					<div class="about-items">
-						<li class="about"><p><a href="#"> About </a></p></li>
-						<li><p><a href="#"> Program </a></p></li>
-						<li><p><a href="#"> Speakers </a></p></li>
-						<li><p><a href="#"> Concerts </a></p></li>
-						<li><p><a href="#"> Contact-us </a></p></li>
-						<li class="register"><p><a href="#"> Register </a></p></li>
-					</div>
+					<li class="logo"><a href="../../index.html"><img src="../images/logo-cvdl-modified.svg" alt="cvdl-logo"></a></li>
+					<li>
+						<ul class="about-items">
+						<li class="about"><p><a href="about.html"> About </a></p></li>
+						<li hidden><p><a href="#" > Program </a></p></li>
+						<li><p><a href="../../index.html#speakers"> Speakers </a></p></li>
+						<li><p><a href="#concerts"> Concerts </a></p></li>
+						<li><p><a href="about.html#contact-us"> Contact-us </a></p></li>
+						<li class="register"><p><a href="register.html"> Tickets </a></p></li>
+						<li class="home-icon"><a href="../../index.html"><img src="../images/home.svg" alt="home-logo"></a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			</div>
 		</nav>
 	</header>
+
 	<main>
 	
 	<div class="program-section">
 	<h2 class="title"> Main Program</h2>
 	</div>
-	<section class="past-events previous-event">
+	<section class="past-events previous-event" id="previous-event">
 			<h3> Previous event </h3>
 			<ul class="wrapper">
 				<li class="event"> 
-					<iframe  src="https://www.youtube.com/embed/skHcbEHH4aw?controls=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe  src="https://www.youtube.com/embed/skHcbEHH4aw?controls=0&showinfo=0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					<div class="overlay">
 					</div>
 				</li>
@@ -54,31 +58,32 @@
 			
 		</section>
 	
-		<section class="concerts-section">
+		<section class="concerts-section" id="concerts">
 		<h3 > Concerts</h3>
 		<ul class="artists">
 			<li>
-			<img src="../images/invasores.jpg">
+			 <a href="#concerts"><img src="../images/invasores.jpg" alt="invasores-poster"></a>
 			</li>
 			<li>
-			<img src="../images/molotov.jpg">
+			<a href="#concerts"><img src="../images/molotov.jpg" alt="molotov-poster"></a>
 			</li>
 			<li>
-			<img src="../images/mexicano.jpg">
+			<a href="#concerts"><img src="../images/mexicano.jpg" alt="mexicano-poster"></a>
 			</li>
 		</ul>
 		</section>
 		
-		<section class="packages-section">
+		<section class="packages-section" id="packages">
 		<h3 > Packages</h3>
 		<ul class="packages">
 			
 			<li class="gold-package">
 				<h4>Silver package </h4>
 				<div class="image">
-				<img src="../images/gold-package.png">
+				<img src="../images/gold-package.png" alt="gold-package">
 				</div>
-				<ul class="includes">It includes: 
+				<ul class="includes">
+					<li>It includes: </li>
 					<li>One commemorative sinthetic leather messenger bag</li>
 					<li>One ticket to see the Invasores de Nuevo León concert</li>
 					<li>One ticket to see the Molotov concert</li>
@@ -87,16 +92,19 @@
 					<li>One code to download the congress video recording</li>
 					<li>Some magazines and brochures </li>
 				</ul>
+				<div class="purchase">
 				<p class="price"> $55 USD</p>
-				<p class="buy-it-here"> Buy it here!</p>
+				<p class="buy-it-here"><a href="#packages"> Buy it here!</a></p>
+				</div>
 			</li>
 			
 			<li class="silver-package">
 				<h4>Gold package </h4>
 				<div class="image">
-				<img src="../images/silver-package.png">
+				<img src="../images/silver-package.png" alt="silver-package">
 				</div>
-				<ul class="includes">It includes: 
+				<ul class="includes">
+					<li>It includes: </li>
 					<li>One commemorative linen bag</li>
 					<li>One ticket to see the Invasores de Nuevo León concert</li>
 					<li>One ticket to see the Molotov concert</li>
@@ -105,15 +113,15 @@
 					<li>One code to download the congress video recording</li>
 					<li>Some magazines and brochures </li>
 				</ul>
-				<div>
+				<div class="purchase">
 				<p class="price"> $40 USD</p>
-				<p class="buy-it-here"> Buy it here!</p>
+				<p class="buy-it-here"><a href="#packages"> Buy it here! </a></p>
 				</div>
 			</li>
 		</ul>
 		</section>
 		
-	<section class="scholarships-section">
+	<section class="scholarships-section" id="scholarships">
 		<h3> Scholarships</h3>
 		<div class="wrapper">
 			<form class="contact-form">
@@ -126,12 +134,13 @@
 		</div>
 		</section>
 		
-		<section class="open-work-section">
+		<section class="open-work-section" id="open-work">
 		<h3> Open work</h3>
 		<div class="guidelines-document">
-			<div class="wrapper">
-				<img src="../images/document.svg">
+			<div class="wrapper"><a href="#open-work">
+				<img src="../images/document.svg" alt="guidelines">
 				<p class="download">Download</p>
+				</a>
 			</div>
 		</div>
 		</section>
@@ -141,7 +150,7 @@
 	</main>
 	<footer>
 		<div class="copyright">
-			<div class="picture"><img src="../images/cvdl-logo-1.png"></div>
+			<div class="picture"><img src="../images/cvdl-logo-1.png" alt="cvdl-logo"></div>
 			<p>  Congreso Veterinario de León © 2020.  All rights reserved. </p>
 		</div>
 	</footer>
