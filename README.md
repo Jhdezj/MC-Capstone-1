@@ -31,7 +31,7 @@ As to the content I used the information from the [Veterinary Congress in Leon 2
   It shows with all its elements on large devices whereas it collapses into a drop down menu for small devices.  
 
   ###### &nbsp; The main content
-  It comprises the different sections distributed among four different pages: the index, the main program, the about page, and  the tickets pages.
+  It comprises the different sections distributed among four different pages: the index, the main program, the about, and  the tickets pages.
 
   ###### &nbsp; The footer
   It contains the congress logo and the copyright notice.
