@@ -44,7 +44,7 @@ As to the content I used the information from the [Veterinary Congress in Leon 2
 ## Live Demo
 
 - [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-Capstone-1/0c90aa9ed5281ea447e3efd528356039a61c9baf/index.html)
--[Video presenting the main features](https://www.loom.com/share/fa5455653cc04d2793e1c51e0e30f6eb)
+- [Video presenting the main features](https://www.loom.com/share/fa5455653cc04d2793e1c51e0e30f6eb)
 
 ## Getting Started
 
