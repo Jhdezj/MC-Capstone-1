@@ -1,8 +1,4 @@
-# MC-Capstone-1
-Designing a requested project
-
-
-## Microverse HTML/CSS Capstone Project
+# Microverse HTML/CSS Capstone Project
 
 This project consists of  designing a web site following a given design. The desing I used is a conference layout created by [Cindy Shin](https://www.behance.net/adagio07) for the CC Global Summit 2015. You can find the design [here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
@@ -21,6 +17,8 @@ As to the content I used the information from the [Veterinary Congress in Leon 2
 
  - Flexbox and floating elements
  - Positioning
+ - HTML tables
+ - Forms
  - SVG, png, and jpg images
  - Media queries
  - Backgrounds & gradients
@@ -45,7 +43,8 @@ As to the content I used the information from the [Veterinary Congress in Leon 2
 
 ## Live Demo
 
-- [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-Capstone-1/bee2296f87620135e759191d428f289bf408d28f/index.html)
+- [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-Capstone-1/0c90aa9ed5281ea447e3efd528356039a61c9baf/index.html)
+-[Video presenting the main features](https://www.loom.com/share/fa5455653cc04d2793e1c51e0e30f6eb)
 
 ## Getting Started
 
