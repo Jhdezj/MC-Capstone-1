@@ -1289,7 +1289,6 @@ form {
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 50px;
-  height: 70px;
   padding: 15px;
 }
 
@@ -1322,13 +1321,13 @@ form {
 	display: flex;
 	width: 80%;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .schedule-days li{
 	padding:15px;
 	border: solid 1px silver;
 	margin: 2px;
-	width: 20%;
 	text-align: center; 
 	vertical-align: center;
 	background-color:  #d3d3d3;
@@ -1360,6 +1359,7 @@ form {
 	text-align: center;
 	font-size: 18px;
 	position: relative;
+	margin-bottom: 80px;
 }
 
 .daily-objectives li:nth-child(2){
@@ -1375,11 +1375,13 @@ form {
 	text-align: center;
 }
 
+
+
+
 .daily-objectives .happy-pet{
 	text-align: center;
 	border: solid #d3d3d3 1px;
 	color: gray;
-	width: 300px;
 	padding: 10px;
 	border-radius: 50px;
 	top: -15px;
@@ -1387,6 +1389,7 @@ form {
 	right: 0;
 	background-color: white;
 	font-size: 15px;
+	margin-top: 50px;
 }
 .daily-objectives .happy-pet::after{
 	display: block;
@@ -1401,22 +1404,19 @@ form {
 	margin-left: 30px;
 }
 
-.schedule-container{
-	margin-top: 30px;
-	width: 80%;
-	display: flex;
-	justify-content: right; 
-	background-color: yellow;
 
-
-}
 .schedule-icons{
 	display: flex; 
-	border: solid gray 1px; 
-	justify-content: right;
-	width: 80%; 
+	justify-content: left;
+	flex-wrap: wrap;
+	width: 100%;
 	
 }
+
+.schedule-icons-wrapper{
+	background-color: #f2f2f2;
+}
+
 
 .schedule-icons li{
 	display: flex;
@@ -1431,29 +1431,62 @@ form {
 	border: none;
 }
 
-table *{
-	border: solid 1px; 
+.schedule-friday tbody, .schedule-friday tr{
+	border: solid 1px #f2f2f2; 
 	
 }
+
+.schedule-friday td{
+	padding: 3px; 
+	border: solid 1px;;
+	
+}
+
+
 .schedule-friday{
 	width: 80%;
-	background-color: white;
+	background-color: white; 
+	border-collapse: separate; 
+	border-spacing: 4px;
+	margin-top: 15px;
+}
+
+.schedule-friday thead{
+	background-color: #f2f2f2;
+}
+
+
+.schedule-friday tbody{
+	background-color: white; 
+	
+}
+
+
+.schedule-friday td{
+	border-width:0;
 }
 
 .workshop{
 	background-color: #e2dffa;
+	margin: 5px;
 }
 
 .lecture{
 	background-color:#eceff4;
+	margin: 5px;
+}
+.lecture div{
+	margin: 4px;
 }
 
 .event{
 	background-color: #daf0ee;
+	margin: 5px;
 }
 
 .forum{
 	background-color: #ffe3db;
+	margin: 5px;
 }
 
 .break{
@@ -1467,10 +1500,72 @@ table *{
 	justify-content: space-between;
 }
 
-.bold{
+
+
+.schedule-title{
 	font-weight: bold;
 }
-.bvorder-none{
-	border: none;
+.schedule-topics{
+	padding: 0 10px;
+}
+.schedule-place{
+	color: red; 
+	display: flex; 
+	align-items: center;
+	padding: 0 2px;
+	justify-content: space-between;
+	font-size: 12px;
+}
+
+.schedule-who-place{
+	padding-top: 25px;
+	font-size: 12px;
+	
+}
+
+.schedule-who{
+	text-decoration:underline;
+	color: black;
+	font-size: 12px;
+}
+
+
+.schedule-who:hover, .schedule-place:hover{
+	cursor: pointer;
+}
+
+.time{
+	width: 200px;
+	text-align: center; 
+	border: 0 ;
+}
+
+
+.activities-merge{
+	vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+	
+	.schedule-icons{
+		justify-content:right;
+	}
+	
+	.lecture div{
+		margin: 4px 0 4px 10px;
+	}
+	
+	.schedule-who{
+		margin-left: 10px; 
+	}
+	
+	.schedule-days{
+		
+		flex-direction: row;
+	}
+	.flex-row div:first-child{
+		display: flex; 
+		align-items: center; 
+	}
 }
 
