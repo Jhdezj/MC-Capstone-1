@@ -187,6 +187,13 @@ nav .logo {
   top: -15px;
 }
 
+.schedule-icons img,
+.schedule-friday img {
+  width: 30px;
+  margin: 5px;
+  border: none;
+}
+
 .artists li img,
 .artists li {
   width: 100%;
@@ -208,6 +215,23 @@ nav .logo {
   -ms-flex-align: center;
   align-items: center;
   margin: 50px 0;
+}
+
+.schedule-days li {
+  padding: 15px;
+  border: solid 1px silver;
+  margin: 2px;
+  text-align: center;
+  vertical-align: center;
+  background-color: #d3d3d3;
+  border-radius: 3px;
+}
+
+.schedule-icons li {
+  display: flex;
+  margin: 2px;
+  padding: 2px;
+  align-items: center;
 }
 
 .menu-items .media-links li,
@@ -409,11 +433,11 @@ h1.title {
 }
 
 @media (min-width: 768px) {
-	
-	.date,
-.place {
-  margin-left: 20px;
-}
+  .date,
+  .place {
+    margin-left: 20px;
+  }
+
   main {
     margin-top: 0;
   }
@@ -497,7 +521,7 @@ h1.title {
 .main-program-section .full-program {
   color: white;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin: 0 3px;
 }
 
@@ -656,6 +680,33 @@ footer .picture img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.schedule-days li:hover {
+  background-color: #ec5242;
+  color: white;
+  cursor: pointer;
+}
+
+.daily-objectives li:first-child {
+  color: #ec5242;
+  font-weight: bold;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.daily-objectives li:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.daily-objectives li:nth-child(3),
+.daily-objectives li:nth-child(4) {
+  text-align: center;
 }
 
 .main-program-section .events li:hover {
@@ -857,6 +908,11 @@ footer {
 }
 
 /* Contact-us section */
+
+.event {
+  background-color: #daf0ee;
+  margin: 5px;
+}
 
 .past-events .event {
   position: relative;
@@ -1323,259 +1379,183 @@ form {
 
 /* schedule */
 
-.schedule-days{
-	display: flex;
-	width: 80%;
-	justify-content: center;
-	flex-direction: column;
+.schedule-days {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.schedule-days li{
-	padding:15px;
-	border: solid 1px silver;
-	margin: 2px;
-	text-align: center; 
-	vertical-align: center;
-	background-color:  #d3d3d3;
-	border-radius: 3px;
+.daily-objectives {
+  width: 80%;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: #d3d3d3;
+  margin-top: 20px;
+  padding: 25px;
+  position: relative;
 }
 
-.schedule-days li:hover{
-	background-color: #ec5242;	
-	color: white;
-	cursor: pointer;
+.daily-objectives .happy-pet {
+  text-align: center;
+  border: solid #d3d3d3 1px;
+  color: gray;
+  padding: 10px;
+  border-radius: 50px;
+  top: -15px;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  font-size: 15px;
+  margin-top: 50px;
 }
 
-.daily-objectives{
-	width: 80%;
-	border-top: solid 1px;
-	border-bottom: solid 1px; 
-	border-color: #d3d3d3;
-	margin-top: 20px;
-	padding: 25px;
-	position: relative;
+.daily-objectives .happy-pet::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 
-
-
-.daily-objectives li:first-child{
-	color: #ec5242;
-	font-weight: bold;
-	margin: 20px auto;
-	text-align: center;
-	font-size: 18px;
-	position: relative;
-	margin-bottom: 80px;
+.schedule-icons {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.daily-objectives li:nth-child(2){
-	font-size: 22px;
-	font-weight: bold;
-	text-align: center;
-	
+.schedule-icons-wrapper {
+  background-color: #f2f2f2;
 }
 
-.daily-objectives li:nth-child(3),
-.daily-objectives li:nth-child(4)
-{
-	text-align: center;
+.schedule-friday tbody,
+.schedule-friday tr {
+  border: solid 1px #f2f2f2;
 }
 
-
-
-
-.daily-objectives .happy-pet{
-	text-align: center;
-	border: solid #d3d3d3 1px;
-	color: gray;
-	padding: 10px;
-	border-radius: 50px;
-	top: -15px;
-	position: absolute;
-	right: 0;
-	background-color: white;
-	font-size: 15px;
-	margin-top: 50px;
-}
-.daily-objectives .happy-pet::after{
-	display: block;
-	content: "";
-	width: 0; 
-	height: 0; 
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid white;
-	position: absolute; 
-	margin-top: 10px;
-	margin-left: 30px;
+.schedule-friday td {
+  padding: 3px;
+  border-width: 0;
 }
 
-
-.schedule-icons{
-	display: flex; 
-	justify-content: left;
-	flex-wrap: wrap;
-	width: 100%;
-	
+.schedule-friday {
+  width: 80%;
+  background-color: white;
+  border-collapse: separate;
+  border-spacing: 4px;
+  margin-top: 15px;
 }
 
-.schedule-icons-wrapper{
-	background-color: #f2f2f2;
+.schedule-friday thead {
+  background-color: #f2f2f2;
 }
 
-
-.schedule-icons li{
-	display: flex;
-	margin: 2px;
-	padding: 2px;
-	align-items: center; 
+.schedule-friday tbody {
+  background-color: white;
 }
 
-.schedule-icons img, .schedule-friday img{
-	width: 30px;
-	margin: 5px;
-	border: none;
+.workshop {
+  background-color: #e2dffa;
+  margin: 5px;
 }
 
-.schedule-friday tbody, .schedule-friday tr{
-	border: solid 1px #f2f2f2; 
-	
+.lecture {
+  background-color: #eceff4;
+  margin: 5px;
 }
 
-.schedule-friday td{
-	padding: 3px; 
-	border: solid 1px;;
-	
+.lecture div {
+  margin: 4px;
 }
 
-
-.schedule-friday{
-	width: 80%;
-	background-color: white; 
-	border-collapse: separate; 
-	border-spacing: 4px;
-	margin-top: 15px;
+.forum {
+  background-color: #ffe3db;
+  margin: 5px;
 }
 
-.schedule-friday thead{
-	background-color: #f2f2f2;
+.break {
+  text-align: center;
 }
 
-
-.schedule-friday tbody{
-	background-color: white; 
-	
+.flex-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-
-.schedule-friday td{
-	border-width:0;
+.schedule-title {
+  font-weight: bold;
 }
 
-.workshop{
-	background-color: #e2dffa;
-	margin: 5px;
+.schedule-topics {
+  padding: 0 10px;
 }
 
-.lecture{
-	background-color:#eceff4;
-	margin: 5px;
-}
-.lecture div{
-	margin: 4px;
-}
-
-.event{
-	background-color: #daf0ee;
-	margin: 5px;
+.schedule-place {
+  color: red;
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  justify-content: space-between;
+  font-size: 12px;
 }
 
-.forum{
-	background-color: #ffe3db;
-	margin: 5px;
+.schedule-who-place {
+  padding-top: 25px;
+  font-size: 12px;
 }
 
-.break{
-	text-align: center;
+.schedule-who {
+  text-decoration: underline;
+  color: black;
+  font-size: 12px;
 }
 
-.flex-row{
-	width: 100%;
-	display: flex; 
-	flex-direction: row; 
-	justify-content: space-between;
+.schedule-who:hover,
+.schedule-place:hover {
+  cursor: pointer;
 }
 
-
-
-.schedule-title{
-	font-weight: bold;
-}
-.schedule-topics{
-	padding: 0 10px;
-}
-.schedule-place{
-	color: red; 
-	display: flex; 
-	align-items: center;
-	padding: 0 2px;
-	justify-content: space-between;
-	font-size: 12px;
+.time {
+  width: 200px;
+  text-align: center;
+  border: 0;
 }
 
-.schedule-who-place{
-	padding-top: 25px;
-	font-size: 12px;
-	
+.activities-merge {
+  vertical-align: middle;
 }
 
-.schedule-who{
-	text-decoration:underline;
-	color: black;
-	font-size: 12px;
-}
-
-
-.schedule-who:hover, .schedule-place:hover{
-	cursor: pointer;
-}
-
-.time{
-	width: 200px;
-	text-align: center; 
-	border: 0 ;
-}
-
-
-.activities-merge{
-	vertical-align: middle;
-}
-
-.schedule-link{
-	margin-left: 50px;
+.schedule-link {
+  margin-left: 50px;
 }
 
 @media (min-width: 768px) {
-	
-	.schedule-icons{
-		justify-content:right;
-	}
-	
-	.lecture div{
-		margin: 4px 0 4px 10px;
-	}
-	
-	.schedule-who{
-		margin-left: 10px; 
-	}
-	
-	.schedule-days{
-		
-		flex-direction: row;
-	}
-	.flex-row div:first-child{
-		display: flex; 
-		align-items: center; 
-	}
-}
+  .schedule-icons {
+    justify-content: right;
+  }
 
+  .lecture div {
+    margin: 4px 0 4px 10px;
+  }
+
+  .schedule-who {
+    margin-left: 10px;
+  }
+
+  .schedule-days {
+    flex-direction: row;
+  }
+
+  .flex-row div:first-child {
+    display: flex;
+    align-items: center;
+  }
+}
