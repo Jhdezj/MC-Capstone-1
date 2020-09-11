@@ -1,11 +1,11 @@
 # Microverse HTML/CSS Capstone Project
 
-This project consists of  designing a web site following a given design. The desing I used is a conference layout created by [Cindy Shin](https://www.behance.net/adagio07) for the CC Global Summit 2015. You can find the design [here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+This project consists of  designing a web site following a given design. The design I used is a conference layout created by [Cindy Shin](https://www.behance.net/adagio07) for the CC Global Summit 2015. You can find the design [here](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 As to the content I used the information from the [Veterinary Congress in Leon 2020](https://cvdl.com.mx/).
 
 
-![screenshot](assets/images/screenshot.png)
+![screenshot](assets/images/screenshot.jpg)
 
 #### I. The project was based on a responsive layout with the next break points:
 
@@ -13,7 +13,7 @@ As to the content I used the information from the [Veterinary Congress in Leon 2
  - For bigger devices with a screen wider than 767px
 
 
-#### II. The layout was built with pure HTML and CSS (no javascript was used) by making use of:
+#### II. The layout was built with HTML and CSS (no javascript was used) by making use of:
 
  - Flexbox and floating elements
  - Positioning
@@ -37,14 +37,14 @@ As to the content I used the information from the [Veterinary Congress in Leon 2
 ## Built With
 
 - HTML & CSS
-- Code Editors- Atom
+- Code Editors- Atom/Notepad++
 - Gimp
-- inkscape
+- Inkscape
 
 ## Live Demo
 
 - [Live Demo Link](https://rawcdn.githack.com/Jhdezj/MC-Capstone-1/0c90aa9ed5281ea447e3efd528356039a61c9baf/index.html)
-- [Video presenting the main features](https://www.loom.com/share/fa5455653cc04d2793e1c51e0e30f6eb)
+- [Video presenting the main features](https://www.loom.com/share/ac62c0ae6e224a7184402ce8e5acca54)
 
 ## Getting Started
 
