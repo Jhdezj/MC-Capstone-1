@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" type="text/css" href="assets/reset.css" />
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/abstraction.css" />
 	<link rel="stylesheet" type="text/css" href="assets/queries.css" />
   </head>
 
@@ -16,11 +17,11 @@
           <a href="#show"><img src="assets/images/bars-solid.svg" alt="menu-bars" /></a>
         </div>
         <div class="nav-menu-wrapper" id="close">
-          <div class="menu-items" id="show">
+          <div class="menu-items d-flex flex-column position-absolute justify-content-center align-items-center" id="show">
             <div class="times-icon">
               <a href="#close"><img src="assets/images/times-solid.svg" alt="times-icon" /></a>
             </div>
-            <ul class="media-links">
+            <ul class="media-links d-flex flex-column justify-content-center align-items-center">
               <li class="facebook-icon">
                 <a href="#"> <img src="assets/images/facebook.svg" alt="facebook-icon" /></a>
               </li>
@@ -37,13 +38,13 @@
                 <p><a href="#"> Logout </a></p>
               </li>
             </ul>
-            <ul class="about-links">
+            <ul class="about-links d-flex flex-column justify-content-center align-items-center">
               <li class="logo">
                 <a href="#"><img src="assets/images/logo-cvdl-modified.svg" alt="cvdl-logo" /></a>
               </li>
               <li>
-                <ul class="about-items">
-                  <li class="about">
+                <ul class="about-items d-flex flex-column justify-content-center align-items-center">
+                  <li class="about d-none" hidden>
                     <p><a href="pages/about.html"> About </a></p>
                   </li>
                   <li>
@@ -92,9 +93,9 @@
       <section class="main-program-section" id="main-program">
         <h3 class="title">Main Program</h3>
         <ul class="events">
-          <li>
+          <li class="d-flex align-items-center position-relative">
             <a href="pages/program.html#scholarships">
-              <div class="wrapper">
+              <div class="wrapper d-flex justify-content-center align-items-center">
                 <div><img src="assets/images/ticket.svg" alt="ticket" /></div>
                 <h4 class="title">Scholarships</h4>
                 <p>Need support for the event? Get in touch with us</p>
@@ -103,7 +104,7 @@
           </li>
           <li>
             <a href="pages/program.html#packages">
-              <div class="wrapper">
+              <div class="wrapper d-flex justify-content-center align-items-center">
                 <div><img src="assets/images/backpack.svg" alt="backpack" /></div>
                 <h4 class="title">Packages</h4>
                 <p>Silver and Gold packages. Choose yours depending on your needs</p>
@@ -112,7 +113,7 @@
           </li>
           <li>
             <a href="pages/program.html#open-work">
-              <div class="wrapper">
+              <div class="wrapper d-flex justify-content-center align-items-center">
                 <div><img src="assets/images/document.svg" alt="document" /></div>
                 <h4 class="title">Open Work</h4>
                 <p>Read the guidelines to present your research work</p>
@@ -121,7 +122,7 @@
           </li>
           <li>
             <a href="pages/program.html#concerts">
-              <div class="wrapper">
+              <div class="wrapper d-flex justify-content-center align-items-center">
                 <div><img src="assets/images/concert.svg" alt="concert" /></div>
                 <h4 class="title">Concerts</h4>
                 <p>Mexican music at the end of the day</p>
@@ -130,7 +131,7 @@
           </li>
           <li>
             <a href="pages/program.html#previous-event">
-              <div class="wrapper">
+              <div class="wrapper d-flex justify-content-center align-items-center">
                 <div class="logo"><img src="assets/images/logo-cvdl-white.svg" alt="cvdl-logo" /></div>
                 <h4 class="title">2019 Edition</h4>
                 <p>Check out the previous congress</p>
@@ -138,10 +139,10 @@
             </a>
           </li>
         </ul>
-        <p class="join">
+        <p class="join d-flex justify-content-center">
           <span><a href="#">Join Veterinary Congress in Leon 2020</a></span>
         </p>
-        <p class="full-program">
+        <p class="full-program justify-content-center">
           <span><a href="pages/program.html">See the full program</a></span><span class="schedule-link"><a href="pages/schedule.html">See the schedule</a></span>
         </p>
       </section>
@@ -214,12 +215,12 @@
 
       <section class="committee">
         <h3 class="title">Organizing committee</h3>
-        <div class="picture"><img src="assets/images/logo-gray.png" alt="cvdl logo" /></div>
+        <div class="picture d-flex justify-content-center"><img src="assets/images/logo-gray.png" alt="cvdl logo" /></div>
       </section>
     </main>
 
     <footer>
-      <div class="copyright">
+      <div class="copyright d-flex align-items-center justify-content-center">
         <div class="picture"><img src="assets/images/cvdl-logo-1.png" alt="cvdl logo" /></div>
         <p>Congreso Veterinario de León © 2020. All rights reserved.</p>
       </div>

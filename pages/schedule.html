@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" type="text/css" href="../assets/reset.css" />
     <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/abstraction.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/queries.css" />
   </head>
   
@@ -17,11 +18,11 @@
           <a href="#show"><img src="../assets/images/bars-solid.svg" alt="menu-bars" /></a>
         </div>
         <div class="nav-menu-wrapper" id="close">
-          <div class="menu-items" id="show">
+          <div class="menu-items d-flex flex-column position-absolute justify-content-center align-items-center" id="show">
             <div class="times-icon">
               <a href="#close"><img src="../assets/images/times-solid.svg" alt="times-icon" /></a>
             </div>
-            <ul class="media-links">
+            <ul class="media-links d-flex flex-column justify-content-center align-items-center">
               <li class="facebook-icon">
                 <a href="#"> <img src="../assets/images/facebook.svg" alt="facebook-icon" /></a>
               </li>
@@ -38,12 +39,12 @@
                 <p><a href="#"> Logout </a></p>
               </li>
             </ul>
-            <ul class="about-links">
+            <ul class="about-links d-flex flex-column justify-content-center align-items-center">
               <li class="logo">
                 <a href="../index.html"><img src="../assets/images/logo-cvdl-modified.svg" alt="cvdl-logo" /></a>
               </li>
               <li>
-                <ul class="about-items">
+                <ul class="about-items d-flex flex-column justify-content-center align-items-center">
                   <li class="about">
                     <p><a href="about.html"> About </a></p>
                   </li>
@@ -74,10 +75,10 @@
     </header>
    
    <main>
-      <section class="select-package-section">
+      <section class="schedule-section d-flex flex-column justify-content-center align-items-center">
         <h1 hidden>Veterinary Congress in Leon 2020</h1>
         <h3>Schedule</h3>
-        <ul class="schedule-days">
+        <ul class="schedule-days d-flex justify-content-center flex-column">
           <li>Wednesday(2.Sept)</li>
           <li>Thursday(3.Sept)</li>
           <li>Friday(4.Sept)</li>
@@ -97,7 +98,7 @@
         <table class="schedule-friday">
           <tr class="schedule-icons-wrapper">
             <td colspan="4">
-              <ul class="schedule-icons">
+              <ul class="schedule-icons d-flex justify-content-start flex-wrap">
                 <li><img src="../assets/images/lecture-icon.svg" alt="lecture-icon" /> Lecture</li>
                 <li><img src="../assets/images/forum-icon.svg" alt="forum-icon" /> Forum</li>
                 <li><img src="../assets/images/workshop-icon.svg" alt="workshop-icon" /> Workshop</li>
@@ -118,9 +119,9 @@
             <tr>
               <td class="time">10:10 - 10:40 (30')</td>
               <td class="activities workshop" colspan="3">
-                <div class="flex-row">
+                <div class="flex-roww d-flex flex-row justify-content-between">
                   <div class="border-none"><img src="../assets/images/workshop-icon.svg" alt="workshop-icon" /> <span class="schedule-title border-none schedule-topics">[Surgery] Clinical Demonstrations </span>Dr. Luis Tello</div>
-                  <div class="border-none schedule-place schedule-place">Main Auditorium</div>
+                  <div class="border-none schedule-place schedule-place d-flex align-items-center justify-content-between">Main Auditorium</div>
                 </div>
               </td>
             </tr>
@@ -134,7 +135,7 @@
                 <img src="../assets/images/lecture-icon.svg" alt="lecture-icon" />
                 <div class="schedule-title">Dr. Beremiz Sánchez</div>
                 <div>How to successfully perform a surgery?</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place schedule-who-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">Who is Dr. Beremiz Sánchez?</div>
                 </div>
@@ -143,7 +144,7 @@
                 <img src="../assets/images/lecture-icon.svg" alt="lecture-icon" />
                 <div class="schedule-title">Dr. Riad Katriv</div>
                 <div>How to successfully perform a surgery?</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place schedule-who-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">Who is Dr. Riad Katriv?</div>
                 </div>
@@ -152,7 +153,7 @@
                 <img src="../assets/images/lecture-icon.svg" alt="lecture-icon" />
                 <div class="schedule-title">Dr. Beremiz Sánchez</div>
                 <div>How to successfully perform a surgery?</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place schedule-who-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">Who is Dr. Beremiz Sánchez?</div>
                 </div>
@@ -168,7 +169,7 @@
                 <img src="../assets/images/lecture-icon.svg" alt="lecture-icon" />
                 <div class="schedule-title">Dr. Rodrigo Luis Silva</div>
                 <div>How to successfully perform a surgery?</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place schedule-who-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">Who is Dr. Rodrigo Luis Silva?</div>
                 </div>
@@ -177,7 +178,7 @@
                 <img src="../assets/images/forum-icon.svg" alt="forum-icon" />
                 <div class="schedule-title">Sponsored products</div>
                 <div>Best new medicine products</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place schedule-who-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">What are sponsored products?</div>
                 </div>
@@ -186,7 +187,7 @@
                 <img src="../assets/images/lecture-icon.svg" alt="lecture-icon" />
                 <div class="schedule-title">Young researchers</div>
                 <div>Presentation of the best research works nationawide</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place schedule-who-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">What are young researchers?</div>
                 </div>
@@ -202,7 +203,7 @@
                 <img src="../assets/images/lecture-icon.svg" alt="lecture-icon" />
                 <div class="schedule-title">Dra. Samantha Maerker</div>
                 <div>How to successfully perform a surgery?</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place schedule-who-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">Who is Dra. Samantha Maerker?</div>
                 </div>
@@ -211,7 +212,7 @@
                 <img src="../assets/images/lecture-icon.svg" alt="lecture-icon" />
                 <div class="schedule-title">Dra. Veronica Pareja</div>
                 <div>How to successfully perform a surgery?</div>
-                <div class="schedule-place schedule-who-place">
+                <div class="schedule-place d-flex align-items-center justify-content-between">
                   Main Auditorium
                   <div class="schedule-who">Who is Dra. Veronica Pareja?</div>
                 </div>
@@ -225,31 +226,31 @@
             <tr>
               <td class="time">17:00 - 17:40 (40')</td>
               <td class="activities workshop" colspan="3">
-                <div class="flex-row">
+                <div class="flex-roww flex-row d-flex flex-row justify-content-between">
                   <div class="border-none"><img src="../assets/images/workshop-icon.svg" alt="workshop-icon" /> <span class="schedule-title schedule-topics">[Closing note] </span><span>Announcements and message by CVL people</span></div>
-                  <div class="schedule-place schedule-place">Main Auditorium</div>
+                  <div class="schedule-place d-flex align-items-center justify-content-between">Main Auditorium</div>
                 </div>
               </td>
             </tr>
             <tr>
               <td class="time">20:10 - 22:00</td>
               <td class="activities event" colspan="3">
-                <div class="flex-row">
+                <div class="flex-roww d-flex flex-row justify-content-between">
                   <div><img src="../assets/images/event-icon.svg" alt="event-icon" /> <span class="schedule-title schedule-topics">[Concert] </span>Molotov</div>
-                  <div class="border-none schedule-place schedule-place">Room C4</div>
+                  <div class="border-none schedule-place d-flex align-items-center justify-content-between">Room C4</div>
                 </div>
               </td>
             </tr>
           </tbody>
         </table>
-        <div class="save-button-wrapper">
+        <div class="save-button-wrapper d-flex justify-content-center">
           <button class="save"><span>Join Veterinary Congres in Leon 2020</span></button>
         </div>
       </section>
     </main>
     
 	<footer>
-      <div class="copyright">
+      <div class="copyright d-flex align-items-center justify-content-center">
         <div class="picture"><img src="../assets/images/cvdl-logo-1.png" alt="cvdl logo" /></div>
         <p>Congreso Veterinario de León © 2020. All rights reserved.</p>
       </div>

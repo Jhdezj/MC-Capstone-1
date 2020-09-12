@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" type="text/css" href="../assets/reset.css" />
     <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/abstraction.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/queries.css" />
   </head>
 
@@ -16,11 +17,11 @@
           <a href="#show"><img src="../assets/images/bars-solid.svg" alt="menu-bars" /></a>
         </div>
         <div class="nav-menu-wrapper" id="close">
-          <div class="menu-items" id="show">
+          <div class="menu-items d-flex flex-column position-absolute justify-content-center align-items-center" id="show">
             <div class="times-icon">
               <a href="#close"><img src="../assets/images/times-solid.svg" alt="times-icon" /></a>
             </div>
-            <ul class="media-links">
+            <ul class="media-links d-flex flex-column justify-content-center align-items-center">
               <li class="facebook-icon">
                 <a href="#"> <img src="../assets/images/facebook.svg" alt="facebook-icon" /></a>
               </li>
@@ -37,12 +38,12 @@
                 <p><a href="#"> Logout </a></p>
               </li>
             </ul>
-            <ul class="about-links">
+            <ul class="about-links d-flex flex-column justify-content-center align-items-center">
               <li class="logo">
                 <a href="../index.html"><img src="../assets/images/logo-cvdl-modified.svg" alt="cvdl-logo" /></a>
               </li>
               <li>
-                <ul class="about-items">
+                <ul class="about-items d-flex flex-column justify-content-center align-items-center">
                   <li class="about">
                     <p><a href="about.html"> About </a></p>
                   </li>
@@ -73,7 +74,7 @@
     </header>
 
     <main>
-      <section class="select-package-section">
+      <section class="select-package-section d-flex flex-column justify-content-center align-items-center">
 		<h1 hidden>Veterinary Congress in Leon 2020</h1>
         <h3>Select package</h3>
         <div class="acquisition-step">
@@ -138,7 +139,7 @@
         <img src="../assets/images/rhombus-down-solid.svg" alt="rhombus icon" />
       </div>
 
-      <section class="select-package-color-section">
+      <section class="select-package-color-section d-flex flex-column justify-content-center align-items-center">
         <h3>Select bag color</h3>
         <div class="acquisition-step">
           <div class="step-instruction"><span class="step-number"> STEP 2</span> <span>Select the color of your bag </span></div>
@@ -168,13 +169,13 @@
         </div>
       </section>
 
-      <div class="save-button-wrapper">
+      <div class="save-button-wrapper d-flex justify-content-center">
         <button class="save"><span>Next step</span></button>
       </div>
     </main>
 
     <footer>
-      <div class="copyright">
+      <div class="copyright d-flex align-items-center justify-content-center">
         <div class="picture"><img src="../assets/images/cvdl-logo-1.png" alt="cvdl logo" /></div>
         <p>Congreso Veterinario de León © 2020. All rights reserved.</p>
       </div>

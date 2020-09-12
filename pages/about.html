@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" type="text/css" href="../assets/reset.css" />
     <link rel="stylesheet" type="text/css" href="../assets/style.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/abstraction.css" />
 	<link rel="stylesheet" type="text/css" href="../assets/queries.css" />
   </head>
 
@@ -16,11 +17,11 @@
           <a href="#show"><img src="../assets/images/bars-solid.svg" alt="menu-bars" /></a>
         </div>
         <div class="nav-menu-wrapper" id="close">
-          <div class="menu-items" id="show">
+          <div class="menu-items d-flex flex-column position-absolute justify-content-center align-items-center" id="show">
             <div class="times-icon">
               <a href="#close"><img src="../assets/images/times-solid.svg" alt="times-icon" /></a>
             </div>
-            <ul class="media-links">
+            <ul class="media-links d-flex flex-column justify-content-center align-items-center">
               <li class="facebook-icon">
                 <a href="#"> <img src="../assets/images/facebook.svg" alt="facebook-icon" /></a>
               </li>
@@ -37,12 +38,12 @@
                 <p><a href="#"> Logout </a></p>
               </li>
             </ul>
-            <ul class="about-links">
+            <ul class="about-links d-flex flex-column justify-content-center align-items-center">
               <li class="logo">
                 <a href="../index.html"><img src="../assets/images/logo-cvdl-modified.svg" alt="cvdl-logo" /></a>
               </li>
               <li>
-                <ul class="about-items">
+                <ul class="about-items d-flex flex-column justify-content-center align-items-center">
                   <li class="about" hidden>
                     <p><a href="#"> About </a></p>
                   </li>
@@ -73,9 +74,9 @@
     </header>
 
     <main>
-      <section class="about-section">
+      <section class="about-section d-flex flex-column justify-content-center align-items-center">
         <h1>Veterinary Congress in Leon 2020</h1>
-        <div class="description">
+        <div class="description d-flex flex-wrap">
           <div class="foot-prints">
             <img src="../assets/images/cat-footprints-2.svg" alt="cat-footprints" />
           </div>
@@ -119,7 +120,7 @@
 
       <section class="past-events">
         <h3>Past Events</h3>
-        <ul class="wrapper">
+        <ul class="wrapper d-flex flex-column justify-content-center align-items-center">
           <li class="event">
             <iframe src="https://www.youtube.com/embed/skHcbEHH4aw?controls=0&showinfo=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <div class="overlay"></div>
@@ -133,7 +134,7 @@
     </main>
 
     <footer>
-      <div class="copyright">
+      <div class="copyright d-flex align-items-center justify-content-center">
         <div class="picture"><img src="../assets/images/cvdl-logo-1.png" alt="cvdl-logo" /></div>
         <p>Congreso Veterinario de León © 2020. All rights reserved.</p>
       </div>

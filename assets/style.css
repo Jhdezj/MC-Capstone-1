@@ -100,26 +100,26 @@ nav div.menu-items:target {
 }
 
 .menu-items {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  position: absolute;
+  flex-direction: column;*/
+  /* position: absolute; */
   top: -15px;
   z-index: 100;
   background-color: white;
   border: solid 2px;
   margin: 0;
   width: 250px;
-  -webkit-box-pack: center;
+ /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center;  */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center;*/
 }
 
 nav .times-icon {
@@ -242,19 +242,19 @@ nav .logo {
 .menu-items .media-links,
 .menu-items .about-links,
 .menu-items .about-items {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
+  flex-direction: column; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .home-icon {
@@ -262,7 +262,7 @@ nav .logo {
 }
 
 .about {
-  display: none;
+  /* display: none; */
 }
 
 .about-items li:hover {
@@ -344,21 +344,21 @@ h1.title {
   position: relative;
   z-index: 1;
   padding: 15px;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
+  display: flex; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .main-program-section .join {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
+  display: flex; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .main-program-section .join > span {
@@ -374,8 +374,9 @@ h1.title {
 .main-program-section .full-program {
   color: white;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 0 3px;
+  text-decoration: underline;
 }
 
 .about-section .description p {
@@ -386,15 +387,15 @@ h1.title {
 }
 
 .scholarships-section .wrapper {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
+  display: flex; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
   padding: 30px;
   border: solid #d3d3d3 1px;
   max-width: 700px;
@@ -404,19 +405,19 @@ h1.title {
 .guidelines-document .wrapper {
   width: 100px;
   background-color: #272a31;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
+  display: flex; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
+  align-items: center; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: column;*/
   padding: 15px;
   color: white;
 }
@@ -497,19 +498,19 @@ footer .picture img {
 }
 
 .past-events .wrapper {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
+  flex-direction: column; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .main-program-section .events li .wrapper > p {
@@ -517,15 +518,15 @@ footer .picture img {
 }
 
 .main-program-section .events li .wrapper {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
+  display: flex; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .schedule-days li:hover {
@@ -592,12 +593,12 @@ footer .picture img {
 /* partners */
 
 .committee .picture {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
+  display: flex; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .committee {
@@ -613,33 +614,33 @@ footer {
 }
 
 .copyright {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
+  display: flex; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
+  align-items: center; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 /* about */
 
 .about-section {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
+  flex-direction: column; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
   background-color: #f2f2f2;
   padding-top: 100px;
 }
@@ -650,12 +651,12 @@ footer {
 }
 
 .about-section .description {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   margin-top: 50px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
 /* Contact-us section */
@@ -714,28 +715,28 @@ footer {
   height: 45vw;
 }
 
-.artist {
+/* .artist {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
+} */
 
 /* Concerts */
 
 .concerts-section .artists {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
+  flex-direction: column; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 /* packages */
@@ -782,19 +783,19 @@ footer {
 
 .purchase {
   height: 100px;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
+  flex-direction: column; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
+  align-items: center; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .buy-it-here:hover {
@@ -804,13 +805,13 @@ footer {
 /* sholarship section */
 
 .scholarships-section .contact-form {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: column;*/
   width: 350px;
   font-size: 18px;
 }
@@ -833,12 +834,12 @@ footer {
 }
 
 .guidelines-document {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
+  display: flex; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .guidelines-document .download {
@@ -851,19 +852,19 @@ footer {
   background-color: #f2f2f2;
   padding-bottom: 50px;
   padding-top: 80px;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
+  flex-direction: column; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .select-package td,
@@ -911,19 +912,19 @@ form {
 }
 
 .select-package-color-section {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+  display: flex; */
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
+  flex-direction: column; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
+  justify-content: center; */
+  /* -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .select-package-color td,
@@ -947,12 +948,12 @@ form {
 }
 
 .save-button-wrapper {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
+  display: flex; */
+  /* -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center; */
   margin-bottom: 50px;
   margin-top: 50px;
   padding: 15px;
@@ -965,10 +966,10 @@ form {
 /* schedule */
 
 .schedule-days {
-  display: flex;
+  /* display: flex; */
   width: 80%;
-  justify-content: center;
-  flex-direction: column;
+  /* justify-content: center; */
+  /* flex-direction: column; */
 }
 
 .daily-objectives {
@@ -1009,9 +1010,9 @@ form {
 }
 
 .schedule-icons {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* justify-content: left; */
+  /*flex-wrap: wrap;*/
   width: 100%;
 }
 
@@ -1068,11 +1069,11 @@ form {
   text-align: center;
 }
 
-.flex-row {
+.flex-roww {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
 }
 
 .schedule-title {
@@ -1085,10 +1086,10 @@ form {
 
 .schedule-place {
   color: red;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   padding: 0 2px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   font-size: 12px;
 }
 
